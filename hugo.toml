@@ -1,3 +1,65 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Side-Notes'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "A personal Blog"
+
+# Appearance settings
+theme = 'auto'
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Index'
+homeIntroContent = """
+Being in my junior year, I realised that I should probably do some soul searching to figure out what interests me as I near college. I enjoy tech-related stuff, so it kinda made sense to me to build a Hugo website and blog random thoughts, adventures and ideas I get throughout my week as a highschooler. I guess this is sort of a personal diary with random things scattered around- I don't have a schedule but will be decently active (once I understand how to work this thing).
+
+
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Entries'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+
+
+
+
+
+
+
+[[params.menu]]
+name = "entries"
+url = "/posts"
+
+
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
